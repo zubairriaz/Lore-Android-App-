@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3f51b5">
+
+    <ImageView
+        android:id="@+id/imgCorners"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginTop="10dp"
+        android:src="@drawable/message"
+        android:scaleType="fitXY"
+        android:scaleY="1"
+        android:scaleX="1.2"
+        android:background="@drawable/rounded"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textSize="25dp"
+        android:background="#3f51b5"
+        android:textStyle="bold"
+        android:text="LORE"
+        android:textColor="#c5cae9"
+        android:layout_gravity="center_horizontal"
+        />
+
+</FrameLayout>

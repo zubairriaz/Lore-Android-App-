@@ -8,7 +8,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".infrastructure.LoreApplication">
-        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.LoginActivity"
+                  android:theme="@style/LoginwithNoActionBar" />
+        <activity android:name=".activities.RegisterActivity"/>
+        <activity android:name=".activities.ExternalLoginActivity"/>
+        <activity android:name=".activities.LoginNarrowActivity"
+                     android:theme="@style/LoginwithNoActionBar"/>
         <activity android:name=".activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>

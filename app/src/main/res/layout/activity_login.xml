@@ -6,12 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".activities.LoginActivity"
     >
-
-    <Button
+    <include layout="@layout/include_login_header"/>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:onClick="doLoginIn"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/activity_login_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Lore! Login In"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#3f5bf5"/>
+        <Button
+            android:id="@+id/activity_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Lore! Register"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#3f5bf5"
+            />
+        <Button
+            android:id="@+id/activity_login_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Sign In"
+            android:layout_marginBottom="2dp"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#3f5bf5"
+            />
+        <Button
+            android:id="@+id/activity_login_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#3f5bf5"
+            android:text="Facebook Sign In" />
+
+
+    </LinearLayout>
 
 </RelativeLayout>
